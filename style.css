@@ -1,6 +1,65 @@
+@import url("https://allfont.net/allfont.css?fonts=digital-7-mono");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator {
+  width: 300px;
+  padding: 20px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #AAAAAA;
+}
+
 .display {
-  height: 30px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-color: grey;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  font-family: "Digital-7 Mono", sans-serif;
+  font-size: 50px;
 }
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.button {
+  font-weight: bold;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #001f3f;
+  color: white;
+}
+
+.number {
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 30px;
+  background-color: #DDDDDD;
+}
+
+.equals {
+  grid-row: 2 / 6;
+  grid-column: 4 / 5;
+  height: 100%;
+  background-color: #0074D9;
+}
+
+.clear {
+  background-color: #FF4136;
+  color: white;
+}
+
